@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+
+
+}
+.navbar ul{
+margin: 0;
+padding: 0;
+display: flex;
+list-style-type: none;
+position: relative;
+}
+.navbar>ul>li{
+    padding: 0px 16px;
+position: relative;
+}
+.navbar>ul>li>a{
+text-decoration: none;
+display: inline-block;
+padding: 8px 0px;
+
+}
+.navbar>ul>li:hover a{
+    border-bottom: 2px solid black;
+}
+.sub-item{
+    display: none;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0,0, 2);
+}
+.sub-item>ul{
+    list-style-type: none;
+    padding: 0;
+
+
+}
+.sub-item>ul>li>a{
+    display: block;
+    padding: 8px 16px;
+
+}
+.navbar>ul>li:hover.sub-item{
+    display: flex;
+}

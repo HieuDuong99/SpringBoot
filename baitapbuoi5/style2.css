@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    
+}
+.container{
+    display: flex;
+    max-width: 300px;
+    /background-color: cornflowerblue;
+    justify-content: space-between;
+    padding: 5px;
+}
+.container:hover {
+    background: #efefef;
+}
+.img{
+    width: 40px;
+    height: 40px;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.icon{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+.container:hover .icon {
+    display: flex;
+}
+.icon span {
+    margin-left: 5px;
+}
+.nameMV{
+    padding-left: 10px;
+    flex-grow: 1;
+}
+.nameSong {
+    margin-bottom: 5px;
+    color: grey;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nameSinger {
+    color: grey;
+    font-size: 12px;
+    cursor: pointer;
+}
+.container:hover .nameSong {
+    color: #6e55b4;
+}
